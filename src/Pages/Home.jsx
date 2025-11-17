@@ -5,6 +5,7 @@ import SkeletonLoader from "../Componentes/SkeletonLoader";
 import useApps from "../Hooks/useApps";
 import AppsCard from "../Componentes/AppsCard";
 import { Link } from "react-router";
+import AppDetails from "./AppDetails";
 
 const Home = () => {
   const { loading, apps } = useApps();
@@ -44,6 +45,10 @@ const Home = () => {
             </Link>
           </div>
         </div>
+      </section>
+
+      <section>
+        <AppDetails></AppDetails>
       </section>
     </div>
   );
