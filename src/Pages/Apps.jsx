@@ -9,7 +9,7 @@ const Apps = () => {
   const [search, setSearch] = useState("");
   const term = search.trim().toLocaleLowerCase();
   const searchedApps = term
-    ? apps.filter((app) => app.name.toLocaleLowerCase().includes(term))
+    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
     : apps;
 
   return (
@@ -24,11 +24,10 @@ const Apps = () => {
 
         <div className="flex items-center justify-between w-11/12 mx-auto">
           <span className="text-2xl text-[#001931] font-medium">
-            ({searchedApps.length}) Apps Found{""}
+            ({searchedApps.length}) Apps Found{" "}
           </span>
           <div className="search-input-container">
             <label className="input flex items-center">
-                {/* <FaSearch className="search-icon" /> */}
               <input
                 className="px-4 py-2 font-inter text-[#627382] border border-[#D2D2D2] rounded-sm"
                 value={search}

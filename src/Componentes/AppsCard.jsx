@@ -5,7 +5,7 @@ const AppsCard = ({ app }) => {
 
     return (
         <div className='bg-[#f5f5f5]'>
-            <div className='p-4 bg-white rounded-sm h-[380px]'>
+            <div className='p-4 bg-white rounded-md h-[380px] shadow-lg hover:scale-105 transition ease-in-out'>
                 <div className='h-[250px] w-full mx-auto pt-5'>
                 <img src={image} alt="" className='w-52 h-48 mx-auto'/>
                 </div>
