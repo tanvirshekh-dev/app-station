@@ -1,0 +1,435 @@
+[
+  {
+    "image": "https://images.icon-icons.com/2699/PNG/512/netflix_logo_icon_170919.png",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 1,
+    "description": "Netflix is a global streaming platform offering thousands of movies, series, and award-winning originals. It allows users to enjoy high-quality video content across multiple devices with personalized recommendations and seamless streaming. Offline downloads, multiple profiles, and multilingual support make it suitable for families. With regularly updated content and global releases, Netflix has become the preferred entertainment destination for millions of viewers.",
+    "size": "250 Mb",
+    "reviews": "90K",
+    "ratingAvg": 4.5,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 4600000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "id": 2,
+    "description": "Facebook is a popular social networking app used to connect with friends, share posts, and discover trending content. Users can join groups, follow pages, watch reels, and participate in communities. The platform includes Marketplace for buying and selling items and Messenger for instant chats. With billions of users worldwide, Facebook remains a central hub for communication, entertainment, and digital interaction.",
+    "size": "60 Mb",
+    "reviews": "120K",
+    "ratingAvg": 4.2,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1100000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 6000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/500px-Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "id": 3,
+    "description": "Instagram is a photo and video sharing platform where users express creativity through posts, stories, and reels. It offers powerful editing tools, filters, and messaging features. The explore page helps users discover new content, creators, and trends. With millions of daily users, Instagram is one of the most influential apps for lifestyle content, entertainment, and digital branding.",
+    "size": "45 Mb",
+    "reviews": "150K",
+    "ratingAvg": 4.4,
+    "downloads": "3B",
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 700000 },
+      { "name": "3 star", "count": 1300000 },
+      { "name": "4 star", "count": 3400000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms",
+    "id": 4,
+    "description": "WhatsApp Messenger is a secure communication app offering fast messaging, voice calls, and video calls. It uses end-to-end encryption to protect user privacy. Users can share photos, documents, contacts, and locations instantly. WhatsApp also supports group chats, communities, and business messaging, making it a versatile tool for both personal and professional communication across the world.",
+    "size": "38 Mb",
+    "reviews": "170K",
+    "ratingAvg": 4.5,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 1200000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 9000000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-photo/square-tiktok-logo-isolated-white-background_469489-1029.jpg?semt=ais_incoming&w=740&q=80",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 5,
+    "description": "TikTok is a short-form video app where users create and share engaging clips with music, filters, and effects. Its personalized algorithm recommends videos based on user interests. TikTok supports duets, stitches, challenges, and live streams, helping creators grow quickly. It has become a cultural phenomenon and a leading platform for viral trends, music discovery, and entertainment.",
+    "size": "80 Mb",
+    "reviews": "140K",
+    "ratingAvg": 4.3,
+    "downloads": "2.5B",
+    "ratings": [
+      { "name": "1 star", "count": 800000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 3000000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 6,
+    "description": "YouTube is the world’s largest video platform offering entertainment, learning, news, and community-created content. Users can subscribe to channels, watch live streams, create playlists, and download videos offline. With billions of videos uploaded, YouTube provides unlimited access to diverse content. Its advanced algorithm recommends personalized videos, making it a powerful platform for both viewers and creators.",
+    "size": "55 Mb",
+    "reviews": "260K",
+    "ratingAvg": 4.5,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2200000 },
+      { "name": "4 star", "count": 6500000 },
+      { "name": "5 star", "count": 15000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 7,
+    "description": "Spotify is a global music streaming app offering millions of songs, playlists, and podcasts. Users can discover music with personalized recommendations, charts, and AI-powered playlists. Spotify supports offline downloads, cross-device sync, and high-quality audio streaming. It remains a top choice for music lovers and podcast listeners looking for a smooth and enjoyable listening experience.",
+    "size": "30 Mb",
+    "reviews": "210K",
+    "ratingAvg": 4.4,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 5000000 },
+      { "name": "5 star", "count": 11000000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 8,
+    "description": "Google Maps is a navigation app offering real-time GPS tracking, traffic updates, and detailed route planning. Users can explore nearby restaurants, landmarks, and services. With satellite view, street view, offline maps, and voice navigation, it provides a reliable travel experience. It also includes business reviews, photos, and ratings for smart decision-making.",
+    "size": "40 Mb",
+    "reviews": "200K",
+    "ratingAvg": 4.3,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 900000 },
+      { "name": "2 star", "count": 1000000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 6000000 },
+      { "name": "5 star", "count": 9500000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Uber",
+    "companyName": "Uber Technologies",
+    "id": 9,
+    "description": "Uber is a ride-sharing service that allows users to book rides, track drivers, and travel safely. With real-time location tracking, multiple ride options, transparent pricing, and cashless payments, Uber offers convenient transportation. It also supports food delivery and package delivery services. Uber is active in hundreds of cities globally, making travel easier and faster.",
+    "size": "70 Mb",
+    "reviews": "80K",
+    "ratingAvg": 4.1,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1300000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 3100000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/premium-vector/square-zoom-logo-isolated-white-background_469489-910.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 10,
+    "description": "Zoom is a video conferencing app used for online meetings, virtual classrooms, and remote collaboration. It supports HD video calls, screen sharing, breakout rooms, and cloud recording. Zoom is widely used for business calls, webinars, and educational purposes. Its simple interface and reliable connection make it a top tool for communication.",
+    "size": "120 Mb",
+    "reviews": "60K",
+    "ratingAvg": 4.3,
+    "downloads": "500M",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 2600000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "Google Photos is a powerful photo storage and management app that automatically backs up and organizes your memories. It offers smart search, editing tools, shared albums, and advanced AI features that categorize photos by faces, places, and events. Users can store high-quality images and videos safely and access them across devices. With seamless sharing and creative tools, Google Photos makes preserving and enjoying memories effortless.",
+    "size": "70 Mb",
+    "reviews": "85K",
+    "ratingAvg": 4.6,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 350000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 3200000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_logo.svg",
+    "title": "X (Twitter)",
+    "companyName": "X Corp.",
+    "id": 12,
+    "description": "X, formerly known as Twitter, is a fast-paced social platform for sharing thoughts, news, and updates in real time. Users can follow trends, engage in conversations, and interact with creators, brands, and communities. It supports multimedia posts, live spaces, messaging, and powerful discovery tools. X remains a major source of global news, discussions, and viral moments.",
+    "size": "80 Mb",
+    "reviews": "75K",
+    "ratingAvg": 4.1,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 280000 },
+      { "name": "2 star", "count": 360000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 2900000 }
+    ]
+  },
+  {
+  "image": "https://img.freepik.com/premium-vector/twitch-app-icon-interactive-livestreaming-service-gaming-social-media_277909-496.jpg?semt=ais_hybrid&w=740&q=80",
+  "title": "Twitch",
+  "companyName": "Twitch Interactive",
+  "id": 13,
+  "description": "Twitch is a global live-streaming platform where millions watch gaming, esports, music, and creative content. Users can follow channels, chat in real-time, subscribe to creators, and join communities built around shared interests. With interactive features like emotes, badges, and channel points, Twitch offers an engaging streaming experience. Whether you're a viewer or a creator, Twitch provides endless entertainment with constant live broadcasts.",
+  "size": "80 Mb",
+  "reviews": "65K",
+  "ratingAvg": 4.3,
+  "downloads": "15M",
+  "ratings": [
+    { "name": "1 star", "count": 500000 },
+    { "name": "2 star", "count": 300000 },
+    { "name": "3 star", "count": 900000 },
+    { "name": "4 star", "count": 2200000 },
+    { "name": "5 star", "count": 4100000 }
+  ]
+},
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "Google Drive is a cloud storage service that allows users to store, manage, and share files securely. It supports documents, photos, videos, PDFs, and more, with seamless integration across Google Workspace apps. Users can collaborate in real time, access files across devices, and organize data efficiently. With strong security and generous storage plans, Google Drive is a reliable solution for personal and professional file management.",
+    "size": "55 Mb",
+    "reviews": "82K",
+    "ratingAvg": 4.5,
+    "downloads": "11M",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 330000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 3100000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAYFBMVEX////mShnpaUD74NjypIz629Hzq5TtgF74z8LnWSztelbynoTui232vKr0sJv+9PHmUiP86+buhmbrbUf1t6PwknX3w7LoYTjsdE3xmHznTyD++ff85+DpXjH4ybr98Oyc0XGbAAACkUlEQVR4nO3d61LCMBBA4RaogKBWUPHu+7+lY0JHvCBtkmY36zkPwPDp7uivbFURERERERH9s5qp9DdI0fXlpK6X87NG+otEdXVxXncVjFms2/prJWKmq2X9a0Vh3GL8URmYw8UoGPNzMUrEHF2MojCnFqMMTM/F0I4ZtBhqMSGLoQ/zPNulVOy7z6yIX4wjTbIyUi2GLCTxYghBIv5iKIKMthh5ISMuRkbIuIuRCzL6YmSB5FiMDJA8izE2JNtijApJ8a9Uu5WGJFiMyfqyqaaykNjFeJnPFk/ukyQhcYvR3j9cPB98mBQk6i+GG6ZvPxURSMRifA6TPCR0Mb4NkzAkcDF+GSZJSNBiHBsmSchQxp/DVArk5DAVAOk3TLohA4ZJNeQh+KOVQWZAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIEPuQ3asFyONmEfHRaiDbm6uID9YCeVkFPSGiDBI3UmogsSOlA5JgpBRA0oxUlxgk1Uh1yUASjlSXACTtSHVlh6Qeqa68kPks+Uh15YW8va5uz+6aoa+Z9UnkecPH3fmHJ+mMiT442W43q5tFmmnT8ATo/hcUN3CKHmWNGziFz+SGDZzeh4sHDpww5PSLuX0HThxS9Xyq9dTAaYBUAx7PPTpwSiDVwOeMfw6cHkjQA9OfA6cJUgW/hd9O5mtdkMrK2Q6fjUMqLiOnbVw2jg35bJx/8tk4yOUyciLNZeNonc/GGUGfjcOOLiOnNl02jp/6bJyj9dk4EOwycrLZZeOIts/GWXOfjUPzrsN1KRaxz61L6Yh9zVT6GxAREREREaXpHXhLTh8pFxXVAAAAAElFTkSuQmCC",
+    "title": "Microsoft Office",
+    "companyName": "Microsoft Corporation",
+    "id": 15,
+    "description": "Microsoft Office is a productivity suite offering essential tools like Word, Excel, PowerPoint, and Outlook. It helps users create documents, manage spreadsheets, prepare presentations, and communicate efficiently. With cloud integration through OneDrive, users can access and edit files across devices. Microsoft Office is widely used for business, education, and personal tasks, providing powerful features and seamless collaboration. Its user-friendly interface and regular updates make it a reliable solution for modern productivity.",
+    "size": "210 Mb",
+    "reviews": "92K",
+    "ratingAvg": 4.5,
+    "downloads": "14M",
+    "ratings": [
+      { "name": "1 star", "count": 420000 },
+      { "name": "2 star", "count": 510000 },
+      { "name": "3 star", "count": 890000 },
+      { "name": "4 star", "count": 2100000 },
+      { "name": "5 star", "count": 4600000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
+    "title": "Adobe Photoshop",
+    "companyName": "Adobe Inc.",
+    "id": 16,
+    "description": "Adobe Photoshop is a professional photo-editing app widely used for image enhancement, graphic creation, and digital design. It offers advanced tools for retouching, color correction, layer editing, and creative artwork. Photoshop supports high-quality exports and integrates with Adobe Creative Cloud for seamless workflow across devices. Its powerful features make it the top choice for photographers, designers, and artists worldwide. Whether you’re editing simple photos or creating complex graphics, Photoshop delivers unmatched versatility.",
+    "size": "300 Mb",
+    "reviews": "88K",
+    "ratingAvg": 4.4,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 350000 },
+      { "name": "2 star", "count": 440000 },
+      { "name": "3 star", "count": 780000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 3500000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Microsoft OneNote",
+    "companyName": "Microsoft Corporation",
+    "id": 17,
+    "description": "Microsoft OneNote is a digital notebook designed for capturing ideas, organizing notes, and managing tasks. Users can create handwritten notes, add images, draw diagrams, and sync content across devices. With cloud backup, students and professionals can access their notes anytime. OneNote supports collaboration, making it easy to share notebooks with others. Its flexible layout and intuitive tools make it ideal for planning, studying, and creative thinking.",
+    "size": "75 Mb",
+    "reviews": "56K",
+    "ratingAvg": 4.6,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 260000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1100000 },
+      { "name": "5 star", "count": 2400000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopBO9MTYeCj2avCGrw6ybkXNAkmomaBAMM6oa5sDZ_qLuL4LyaJf0gmEMbbOf4kFDhZE&usqp=CAU",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Inc.",
+    "id": 18,
+    "description": "Amazon Shopping allows users to explore millions of products across categories like electronics, fashion, home goods, and groceries. The app offers fast search, secure checkout, order tracking, and personalized recommendations. With exclusive deals, customer reviews, and Prime member benefits, Amazon makes online shopping simple and reliable. Users can manage orders, return items, and communicate with sellers effortlessly. Its smooth performance and trusted services make it a global leader in e-commerce.",
+    "size": "90 Mb",
+    "reviews": "160K",
+    "ratingAvg": 4.5,
+    "downloads": "28M",
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 720000 },
+      { "name": "3 star", "count": 1500000 },
+      { "name": "4 star", "count": 2900000 },
+      { "name": "5 star", "count": 6200000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Google Chrome",
+    "companyName": "Google LLC",
+    "id": 19,
+    "description": "Google Chrome is a fast, secure, and reliable web browser used by millions worldwide. It offers quick browsing, strong security features, and intelligent search suggestions. Chrome supports bookmarks, password sync, extensions, and cross-device syncing via Google accounts. With frequent updates, it ensures optimal performance and protection. Chrome’s simple interface and powerful features make it ideal for everyday browsing, work, research, and entertainment.",
+    "size": "150 Mb",
+    "reviews": "190K",
+    "ratingAvg": 4.7,
+    "downloads": "40M",
+    "ratings": [
+      { "name": "1 star", "count": 700000 },
+      { "name": "2 star", "count": 820000 },
+      { "name": "3 star", "count": 1700000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 8200000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA0lBMVEX///8eiOVMr1D7wC0VZcDlOTUAguSqz/SPu+8IhOR1rOyQv/CJxotGrUpBq0W33bj80nv7viP946wAXL0AgOTf7vulwOTO4vgZcMsTY8Ioe6dOskg/tFFxgaP/xB78xSzFYD3raDXkJR/4z87p8/yexvJDmOj2+f2DuO8AaMgpcMR9o9dMhMzF3ve00/VcpesAe+PlLyq2zOkykeeNrdxSn+oAWr9Cibuqx9lDrzxsq+y92PbX6fqDyo8yr0Wau+Z6k7nUhVHq4tj/wQDAy9f85dYkXqmcAAAEd0lEQVR4nO3de3faNhzGcXnNRAS7tMWEsku2tcZ2LsRZHLM1sOz+/t/SbGSILV96muonIe/5/tFzoMbppxbC2IYwhhBCCCGEEEIIIYQQQgghhBBCCCGEEEIIOV4024xoO2vpbhYZ8gVx6nPiLqYtrS+vZiaAE8E98t6ctDZd3NMDMwO+TmFuvKYeqmaA3cKcSAs8NQPsEZ5MSQfqVpgB9glPFpTTzcMxCKdXdMDAkK9feHJJN9ms/KMQrumG6dLUIO0XTu/IhKZm0g8Jz+iER7INIYQQQgghhBBCCCGEEEIIIYTQqlDo62LR09qWMBzr65dv+vrVjpBPNP6kL95/2937rzX+pHoGhV9+1t1XED4/CPUFIVUQ6gtCqiDUF4RUQagvCKmCsFl0E2epl2anq4+7QsQVYRB7vigeI7ifLtuN0TgsUi4gcUQ48qrL83Tessog5LsDM04KY+X6IuGPGmucC7lKJ4Vx8+Kb2xtlhcv9f4KLwpsDUIjDw8S2ukj08LSMe8LoMDS9ZJwIvxyMWWWRIH3ayg4Kl/JfzzM5vaxCedvfHJbYiMraHBTKaZTHhzvGO6JI9rcntaepg8JJPjJ5bVCm0ixvREl9onVQmDefpKvKTTn1+OVck5Sb0OVXC7Vgt9V4iS5nIp6NxGCEUU3IVsVGzJ+nc38wwk1tlBaX4wovn1kHJAx3D/Yrd2TFvvhwhHInrjq7Brs/hyLcJvKhvrpn6r5wNsmLw/2LQtpYwHnh6pZzftg/46vGAs4L59V9F77sWmAgwqed0sYCAxF6YujbMJ9Km0TnhcWHwYp3Gfut2Dga5byQRUWrmHe9XLgvLNsfk2m85A9GeNhtC5W7ByQsd71Vy5CE8u0T39TvHZIwkAdqlBcMt4X1czHyc9JCWcxVYbTdTJK0vrlmcpQqJy9cFYZ+8Y6iPm/KTxFz5TXfVeGy+Zwrv49BKKcRXRXKQ4fVIbmVS4kHZZ2uCll51IIn8thaEJcPvVW/LcBZYVAuKnyRjJO0PPdUPZHhurDj/GHYOJnvrpBNml+iIbzmN1o4LGQjX1mcp0FznS4L2TbklQdw0XgOFjktzHe2My4vJhG+F7d/58r8Nv9b7rsqzOfU0WmSJeNl5zVRwXKXMn4dEj4zCKmCUF8QUgWhviCkCkJ9QUgVhPqCkKr/uVA9IfFJ/fb4XXePdMLfL950d/HHS339+WNff5EJz6Y936my+P7vV7o6/+nz7t6+IwN+SHj+Qlc/9AgpgUch/JkSeAxCWuARCEmH6DEIqYHWhcRD1L6QHmhZSD5EbQsNbEG7QiNAm0ITQ9Sq0BDQntDMELUoNAa0JTQ1RK0JDQLtCM0NUUtCo0B2Z15ocojmzdamhWa3IGPRpWGhaSBjVz3DlEBoeIgWzRYmhRaAjN13b0TtQvNDdNd1J1G30BKQRZ1EzUIrQ1R2v2g36hXa2oK7ZleX67bf9Kr1vIVNICt+H/Bdy+/r/ee1vv61C0QIIYQQQgghhBBCCCGEEEIIIYQQQgghhKj6D7fvCgPQq9ItAAAAAElFTkSuQmCC",
+    "title": "Google Calendar",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "Google Calendar helps users manage schedules, appointments, reminders, and events efficiently. It supports smart notifications, shared calendars, and cross-device syncing. Users can create meeting schedules, set deadlines, receive reminders, and integrate their calendar with Gmail and other Google services. It is widely used by students, professionals, and teams for time management. With color-coded events and a simple interface, Google Calendar makes planning easier and more organized.",
+    "size": "45 Mb",
+    "reviews": "48K",
+    "ratingAvg": 4.6,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 210000 },
+      { "name": "3 star", "count": 430000 },
+      { "name": "4 star", "count": 950000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "image": "data:image/jpeg;base64,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",
+    "title": "Google Keep",
+    "companyName": "Google LLC",
+    "id": 21,
+    "description": "Google Keep is a simple note-taking and reminder app that allows users to save thoughts, checklists, voice notes, and images. It organizes content using colors, labels, and smart reminders. Notes sync across all devices instantly, making it easy to access information anywhere. Users can collaborate by sharing notes with others. Google Keep’s lightweight interface and fast performance make it a great tool for students, workers, and anyone who needs quick organization.",
+    "size": "40 Mb",
+    "reviews": "39K",
+    "ratingAvg": 4.5,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 190000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAADu7u6xsbGlpaXn5+f19fXy8vL7+/v4+Pjz8/PLy8vV1dWgoKDf3994eHgZGRmYmJhlZWVtbW3Y2NhPT0+pqaksLCyMjIwVFRU5OTkLCwvj4+PDw8OEhIRCQkK6urpaWloiIiJNTU0wMDBAQEBycnJXV1eBgYEeHh5oaGiXcxFPAAAE+klEQVR4nO2cfXuyIBSHp5UvKyu31ix7cb2sbd//Az7Z5lUgHrQB4p7f/eds4n2BAocDDw8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMIrvKuSxbRseN5vsPx2F7E6bYdi21ZXxZKrSruAQ+22bfRNsdOhdSPtty+XMXrUJnnkhqjGYRyYEM51+ZxazioLD+cJx3O4LnluqUNGb7/KLA+2CI+2CjjMtV9Rj/+fV0G7oKe0hqthzpYb9XXFJu+HEhKDjMF/UILrpmnQbmmijF64f1DBiLug2/DJlGP8U6EfcBc2GK1OCzuEygHPj0tBJs2HfmKEzPNdfvCv/XbPhE1fcpK+K6Jm7dRLEC5G5XkOPHa4tlY4vZilz80+hn25DlykrVTyjm4mVWjRMVN+efwdaN8xU3z6uIfjqqS6VgTUcqr493/UJeBqrLpRlwJS2Vn17qeHbSHWRPKxhT/XtJYanqnmjQlhD50lpkQM6NPKkvf4uD8EX+6Ws2JUNfgJDVUWvPki/Z0N+QkMVr7/Mz8D7VyA0/K3jgJ5U6+4fuIepeoyXux0H73T9GfUjDO+txzFdf++G/c4TtpR4nLfGYxyJ38S435k1+UjNHMf8jNACv4d82k0+1kttxzH9/k1WOi1oPNpxX8txRUe0JvoD2ySeOLxQsJU6jumJYNt+OY8xGfmm2+qMfv8+LPDL8SWOlTOrEd0+N5b45fgR3VaFjiO6fdrklxPS87my4+yN9jOwNNiYiBoCOEvGcXQi/T4sWcHnCSNyxXuZFT8ckfWXJjbW3w9hn3TcZsH5R0PSb5FY9v7xeHPS8ZjRfqntfjk/S+x3EVvcPhnm5DenksS6XC8Cuq2KSBO9AWzlBL1DE7+pLRleTQh7y7p+u868fxxePcdF1MH6Kwgy+Xc16tj7V0KSc7O3KIv0LtZbWRV+9jrsGMj9cl7nXW2nWS2/i2O/i47Zsa5fNx2z2n1hwTQK2n7oBtToI0REHfnmBFmj8dotaRf6fslYbdmjv6/TyPLxWyDzC/M63lO/2Vk9BqfnE4es+JasSUd75xn03P41u/3tkO4rYwu/OQE9r7/G2QqGL7SjZfN9SWym7JczpGOmNs0ZPVkMseofZXFFSxxlMdI1NVah1y6scAwjun1KM/osX78I6PWYY62MRYsdPdpvXzsjU7LO1locfEjuHK1eFxUhW0tsJVfBowSb+eWM6PXuNhzd6sepn2dyi2xN37hjpaE8/6IKy/IyKvLa7qu/gjGdu/Bu1FFoePp1zr4sP8pg/pfAsHm+noiZLY4lQzV+OZbkYXKGJ6Xp1yva0Uwureb9FpJdQV8G+o6298x8aa9H1lD5vqcaO1SfNfcdFuxdO+gN5/xv+w9TxSsr9TaK6zUM2eDoVmmQc8VGDhat7AMutaPNvKeIOd8bboKkhb3chvfjuyLHP3Omwvd+30FSCjrrnmrU+typoPhQu4lhQ2Nnm1yjbT7rqH26SE9zlBHflundtlXtho9azmnjOXKl+tczTv7GOVFpWcMvAu0Gghr6z/pyhPNO9/ssJRNhG+2KVRPrywYPI4GpkdbzvraEQxDF1RdV4mk88cuQgpTZ832Z6xJ2NqweFgx671u155fuJ2vbMjICX+EhtH7X8vgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAv8o/T2pLRPNc9l4AAAAASUVORK5CYII=",
+    "title": "CapCut",
+    "companyName": "ByteDance Ltd.",
+    "id": 22,
+    "description": "CapCut is a powerful video editing app offering advanced features like transitions, filters, effects, AI tools, and high-quality exports. Users can create professional videos for social media, business, or personal use. It supports multi-layer editing, sound effects, templates, and automatic captions. CapCut is popular among creators for its smooth performance and easy-to-use interface. Whether you're making short videos or full edits, CapCut provides everything you need.",
+    "size": "160 Mb",
+    "reviews": "105K",
+    "ratingAvg": 4.6,
+    "downloads": "23M",
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 620000 },
+      { "name": "3 star", "count": 1100000 },
+      { "name": "4 star", "count": 2400000 },
+      { "name": "5 star", "count": 5200000 }
+    ]
+  },
+  {
+    "image": "data:image/jpeg;base64,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",
+    "title": "Flipkart",
+    "companyName": "Flipkart Pvt Ltd.",
+    "id": 23,
+    "description": "Flipkart is a leading online shopping platform offering electronics, fashion, home appliances, groceries, and more. Users can enjoy fast delivery, secure payments, product reviews, and exclusive discounts. The app features easy tracking, returns, and 24/7 customer support. Its clean interface and personalized recommendations enhance the shopping experience. Flipkart continues to grow as one of India's most trusted e-commerce brands.",
+    "size": "80 Mb",
+    "reviews": "130K",
+    "ratingAvg": 4.4,
+    "downloads": "19M",
+    "ratings": [
+      { "name": "1 star", "count": 480000 },
+      { "name": "2 star", "count": 560000 },
+      { "name": "3 star", "count": 1100000 },
+      { "name": "4 star", "count": 2500000 },
+      { "name": "5 star", "count": 4600000 }
+    ]
+  },
+  {
+    "image": "data:image/png;base64,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",
+    "title": "Udemy",
+    "companyName": "Udemy Inc.",
+    "id": 24,
+    "description": "Udemy is an online learning platform offering thousands of courses in technology, business, design, marketing, and personal development. Users can learn at their own pace with video lectures, quizzes, and downloadable materials. Udemy supports lifetime access to purchased courses and provides certificates for completed lessons. With expert instructors and a wide range of topics, Udemy helps learners upgrade their skills anytime, anywhere.",
+    "size": "65 Mb",
+    "reviews": "70K",
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 260000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 620000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 3300000 }
+    ]
+  }
+
+]
