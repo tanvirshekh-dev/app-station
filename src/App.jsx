@@ -1,6 +1,5 @@
 import { toast } from "react-toastify";
 import "./App.css";
-import MainLayout from "./Layouts/MainLayout";
 
 function App() {
   const notify = () => toast("Successfully added apps");

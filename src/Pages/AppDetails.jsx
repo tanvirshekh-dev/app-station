@@ -2,6 +2,18 @@ import { Link, useParams } from "react-router-dom";
 import useApps from "../Hooks/useApps";
 import { updateApps } from "../utils/localStorage";
 import { ToastContainer } from "react-toastify";
+import {
+  Bar,
+  CartesianGrid,
+  ComposedChart,
+  Legend,
+  Line,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import Installation from "./Installation";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -9,7 +21,7 @@ const AppDetails = () => {
   const app = apps.find((e) => String(e.id) === id);
 
   if (loading) return <p>Loading..⏳⏳</p>;
-  if (!app) return <p>App not found</p>;
+  if (!app) return <p className="text-center py-40 text-4xl font-bold">App not found</p>;
 
   const {
     image,
@@ -21,6 +33,22 @@ const AppDetails = () => {
     size,
     description,
   } = app || {};
+
+  // chart data generate
+// const totalsByCategory = {};
+//   Installation.forEach((product) => {
+//     const category = product.category;
+
+//     totalsByCategory[category] =
+//       (totalsByCategory[category] || 0) + product.price;
+//   });
+
+
+//   const chartData = Object.keys(totalsByCategory).map((category) => ({
+//     category: category,
+//     total: totalsByCategory[category],
+//   }));
+//   console.log(chartData);
 
   return (
     <div className="bg-[#f5f5f5]">
@@ -94,7 +122,6 @@ const AppDetails = () => {
           </div>
         </div>
       </div>
-
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -107,13 +134,26 @@ const AppDetails = () => {
         pauseOnHover
         theme="light"
       />
-
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
 
       {/* barcherts */}
+      {/* <div className="w-11/12 mx-auto">
+        <h2 className="text-2xl font-semibold mt-16 mb-4">Ratings</h2>
+        <div className="bg-base-100 border rounded-xl p-4 w-full h-80">
+          <ResponsiveContainer width="100%" height={300}>
+            <ComposedChart layout="vertical" data={}>
+              <CartesianGrid stroke="#f5f5f5" />
+              <XAxis type="number" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="ratings" barSize={20} fill="#413ea0" />
+            </ComposedChart>
+          </ResponsiveContainer>
+        </div>
+      </div> */}
 
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
-
       {/* Description */}
       <div className="w-11/12 mx-auto">
         <div>
