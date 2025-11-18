@@ -1,14 +1,24 @@
+import { toast } from "react-toastify";
 
+export const loadInstallation = () => {
+  try {
+    const data = localStorage.getItem("installation");
+    return data ? JSON.parse(data) : [];
+  } catch (err) {
+    console.log(err);
+    return [];
+  }
+};
 
 export const updateApps = (app) => {
-  const wishList = loadWishList();
-//   toast.success("Successfully added this item");
+  const installation = loadInstallation();
+  toast.success("Successfully Download This App");
 
   try {
-    const isDuplicate = wishList.some((p) => p.id === app.id);
-    if (isDuplicate) return alert("Already added in wishlist");
-    const updatedWishList = [...wishList, app];
-    localStorage.setItem("wishlist", JSON.stringify(updatedWishList));
+    const isDuplicate = installation.some((p) => p.id === app.id);
+    if (isDuplicate) return alert("Already added this apps");
+    const updatedInstallation = [...installation, app];
+    localStorage.setItem("installation", JSON.stringify(updatedInstallation));
   } catch (err) {
     console.log(err);
     return [];
@@ -16,4 +26,13 @@ export const updateApps = (app) => {
 };
 
 
+export const removeFromInstallation = (id) => {
+  const installation = loadInstallation();
 
+  try {
+    const updatedInstallation = installation.filter((p) => p.id !== id);
+    localStorage.setItem("installation", JSON.stringify(updatedInstallation));
+  } catch (err) {
+    console.log(err);
+  }
+}

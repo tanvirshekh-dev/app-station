@@ -46,10 +46,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section>
-        <AppDetails></AppDetails>
-      </section>
     </div>
   );
 };

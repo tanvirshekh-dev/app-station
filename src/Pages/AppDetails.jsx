@@ -1,6 +1,7 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useApps from "../Hooks/useApps";
 import { updateApps } from "../utils/localStorage";
+import { ToastContainer } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -81,22 +82,39 @@ const AppDetails = () => {
                 </h2>
               </div>
             </div>
-            <button
-              onClick={() => updateApps(app)}
-              className="font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
-            >
-              Install Now ({size})
-            </button>
+            <Link to={`/apps/${id}`}>
+              <button
+                onClick={() => updateApps(app)}
+                to={`/apps/${id}`}
+                className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
+              >
+                Install Now ({size})
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
 
-      {/* bercharts */}
+      {/* barcherts */}
 
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
 
-      {/* dexcription */}
+      {/* Description */}
       <div className="w-11/12 mx-auto">
         <div>
           <h2 className="font-inter font-semibold text-2xl">Description</h2>
