@@ -28,10 +28,6 @@ const AppDetails = () => {
     description,
   } = app || {};
 
-  // if (isInstalled === true) {
-  //   return <p>Installed</p>
-  // }
-
   const handleClick = () => {
     toast.success("Successfully added this apps");
     setIsInstalled(true);
@@ -98,7 +94,6 @@ const AppDetails = () => {
                 </h2>
               </div>
             </div>
-            {/* <Link to={`/apps/${id}`}> */}
 
             <button
               onClick={() => {
@@ -106,12 +101,10 @@ const AppDetails = () => {
                 handleClick();
               }}
               disabled={isInstalled}
-              // to={`/apps/${id}`}
               className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
             >
               {isInstalled ? "Installed" : <p>Install Now ({app.size})</p>}
             </button>
-            {/* </Link> */}
           </div>
         </div>
       </div>

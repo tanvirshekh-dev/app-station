@@ -1,18 +1,12 @@
-
 import "./App.css";
 
-function App() {
 
+export default function App() {
   return (
-    <div>
-      <>
-        <div>
-
-         
-        </div>
-      </>
-    </div>
+    <>
+      <div>
+        
+      </div>
+    </>
   );
 }
-
-export default App;

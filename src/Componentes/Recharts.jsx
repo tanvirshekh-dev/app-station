@@ -1,4 +1,5 @@
-import React from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import {
   Bar,
   BarChart,
@@ -9,20 +10,44 @@ import {
   YAxis,
 } from "recharts";
 
-const recharts = {
-  ratings: [
-    { name: "1 star", count: 500000 },
-    { name: "2 star", count: 620000 },
-    { name: "3 star", count: 1100000 },
-    { name: "4 star", count: 2400000 },
-    { name: "5 star", count: 5200000 },
-  ],
-};
+
 const Recharts = () => {
+  const [apiCallData, setApiCallData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("/appsData.json");
+        setApiCallData(response.data);
+        setLoading(false);
+      } catch (err) {
+        setError(err);
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) return <p>Loading data...</p>;
+  if (error) return <p>Error fetching data: {error.message}</p>;
+
+  const result = apiCallData.map(item => {
+  return {
+    ratings: item.ratings.map(r => ({
+      name: r.name,
+      count: r.count
+    }))
+  };
+});
+  console.log(apiCallData);
+  
   return (
     <div className="w-11/12 mx-auto">
-      <ResponsiveContainer width="100%" height={400}>
-        <BarChart layout="vertical" data={recharts.ratings}>
+      <ResponsiveContainer width="100%" height={450}>
+        <BarChart layout="vertical" data={result}>
           <XAxis type="number" />
           <YAxis />
           <Tooltip />
