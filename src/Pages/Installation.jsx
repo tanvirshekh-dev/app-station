@@ -13,8 +13,8 @@ const Installation = () => {
 
   if (!installation.length) {
     return (
-      <p className="text-center my-40 text-4xl text-gray-400 font-semibold">
-        No data available
+      <p className="text-center font-inter pt-40 pb-44 text-4xl text-gray-500 font-semibold">
+        No Apps Available
       </p>
     );
   }

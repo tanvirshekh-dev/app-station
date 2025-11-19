@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import AppsCard from "../Componentes/AppsCard";
 import SkeletonLoader from "../Componentes/SkeletonLoader";
 import useApps from "../Hooks/useApps";
-import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router";
 
 const Apps = () => {
+
+   const navigate = useNavigate();
+    const showAllApps = () => {
+      navigate('/apps');
+    }
   const { apps, loading } = useApps();
 
-  // const [filteredApps, setFilteredApps] = useState();
   const [search, setSearch] = useState("");
   const term = search.trim().toLocaleLowerCase();
   const searchedApps = term
     ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
     : apps;
-
-  if (searchedApps.length > 0) {
-    // return <h2>App Not Found</h2>
-  }
 
   return (
     <div className="bg-[#f5f5f5]">
@@ -41,20 +41,16 @@ const Apps = () => {
                 type="search"
                 placeholder="Search"
               />
-              {/* {filteredApps.length > 0 ? (
-                <div>
-                  {filteredApps.map((app) => (
-                    <p key={app.id}>{app.title}</p>
-                  ))}
-                </div>
-              ) : (
-                searchedApps !== "" && <p>No item found "{searchedApps}"</p>
-              )} */}
             </label>
           </div>
         </div>
         {searchedApps.length === 0 ? (
-          <h2 className="text-center text-5xl font-bold text-gray-600 py-28">Apps Not Found</h2>
+          <div className="text-center py-12">
+            <p className="text-5xl text-center font-semibold pt-20 pb-8 text-[#001931]">No Apps Found</p>
+            <button onClick={showAllApps} className="btn py-3 px-4 rounded-sm bg-linear-to-t from-[#9F62F2] to-[#632EE3] text-white cursor-pointer">
+              Show All Apps
+            </button>
+          </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-11/12 mx-auto pt-4 pb-20">
             {searchedApps.map((app) => (

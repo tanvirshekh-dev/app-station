@@ -5,6 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 // import Installation from "./Installation";
 import { useEffect, useState } from "react";
 import Recharts from "../Componentes/Recharts";
+import AppsNotFound from "../Componentes/AppsNotFound";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const AppDetails = () => {
   if (loading) return <p>Loading..⏳⏳</p>;
   if (!app)
     return (
-      <p className="text-center py-40 text-4xl font-bold">App not found</p>
+      <AppsNotFound></AppsNotFound>
     );
 
   const {

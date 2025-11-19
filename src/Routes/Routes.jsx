@@ -28,11 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/apps/:id",
-        element: <AppDetails></AppDetails>
+        element: <AppDetails></AppDetails>,
       },
       {
         path: "*",
-        element: <h1>Page not found</h1>
+        element: <ErrorPage></ErrorPage>
       }
 
     ],

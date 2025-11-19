@@ -1,29 +1,31 @@
-import React from 'react';
-import { useNavigate } from 'react-router';
+import React from "react";
+import { useNavigate } from "react-router";
 
-const ErrorPage = () => {
+const AppsNotFound = () => {
+
     const navigate = useNavigate();
-    const goHome= () => {
-        navigate('/')
+    const goHome = () => {
+        navigate('/');
     }
-    return (
-        <div>
-            <div className="p-20">
+  return (
+    <div>
+      <div className="p-20">
         <img
-          src="/public/assets/error-404.png"
+          src="/public/assets/App-Error.png"
           alt="Apps Not Found"
           className="mx-auto mb-5 pt-10 pb-5"
         />
         <h2 className="text-center text-5xl font-inter font-semibold">
-          OPPS!! Page NOT FOUND
+          OPPS!! APP NOT FOUND
         </h2>
         <p className="font-inter text-xl text-[#627382] mt-2 mb-4 text-center">
-          The page you are looking for is not available.
+          The App you are requesting is not found on our system. please try
+          another apps
         </p>
 
         <div className="text-center pt-3">
                   <a 
-            onClick={goHome}    
+                  onClick={goHome}    
             target="_blank"
             className="btn py-3 px-4 rounded-sm bg-linear-to-t from-[#9F62F2] to-[#632EE3] text-white cursor-pointer
          "
@@ -32,8 +34,8 @@ const ErrorPage = () => {
           </a>
         </div>
       </div>
-        </div>
-    );
+    </div>
+  );
 };
 
-export default ErrorPage;
+export default AppsNotFound;
