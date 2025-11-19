@@ -1,27 +1,22 @@
 import { Link, useParams } from "react-router-dom";
 import useApps from "../Hooks/useApps";
 import { updateApps } from "../utils/localStorage";
-import { ToastContainer } from "react-toastify";
-import {
-  Bar,
-  CartesianGrid,
-  ComposedChart,
-  Legend,
-  Line,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
-import Installation from "./Installation";
+import { toast, ToastContainer } from "react-toastify";
+// import Installation from "./Installation";
+import { useState } from "react";
+import Recharts from "../Componentes/Recharts";
 
 const AppDetails = () => {
   const { id } = useParams();
   const { apps, loading } = useApps();
   const app = apps.find((e) => String(e.id) === id);
+  const [isInstalled, setIsInstalled] = useState(false);
 
   if (loading) return <p>Loading..⏳⏳</p>;
-  if (!app) return <p className="text-center py-40 text-4xl font-bold">App not found</p>;
+  if (!app)
+    return (
+      <p className="text-center py-40 text-4xl font-bold">App not found</p>
+    );
 
   const {
     image,
@@ -30,28 +25,21 @@ const AppDetails = () => {
     downloads,
     ratingAvg,
     reviews,
-    size,
     description,
   } = app || {};
 
-  // chart data generate
-// const totalsByCategory = {};
-//   Installation.forEach((product) => {
-//     const category = product.category;
+  // if (isInstalled === true) {
+  //   return <p>Installed</p>
+  // }
 
-//     totalsByCategory[category] =
-//       (totalsByCategory[category] || 0) + product.price;
-//   });
-
-
-//   const chartData = Object.keys(totalsByCategory).map((category) => ({
-//     category: category,
-//     total: totalsByCategory[category],
-//   }));
-//   console.log(chartData);
+  const handleClick = () => {
+    toast.success("Successfully added this apps");
+    setIsInstalled(true);
+  };
 
   return (
     <div className="bg-[#f5f5f5]">
+      {/* apps details */}
       <div className="flex items-center w-11/12 mx-auto pt-20 pb-10">
         <figure>
           <img src={image} alt="app" className="w-72 h-72 mr-56" />
@@ -110,48 +98,27 @@ const AppDetails = () => {
                 </h2>
               </div>
             </div>
-            <Link to={`/apps/${id}`}>
-              <button
-                onClick={() => updateApps(app)}
-                to={`/apps/${id}`}
-                className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
-              >
-                Install Now ({size})
-              </button>
-            </Link>
+            {/* <Link to={`/apps/${id}`}> */}
+
+            <button
+              onClick={() => {
+                updateApps(app);
+                handleClick();
+              }}
+              disabled={isInstalled}
+              // to={`/apps/${id}`}
+              className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
+            >
+              {isInstalled ? "Installed" : <p>Install Now ({app.size})</p>}
+            </button>
+            {/* </Link> */}
           </div>
         </div>
       </div>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick={false}
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
 
       {/* barcherts */}
-      {/* <div className="w-11/12 mx-auto">
-        <h2 className="text-2xl font-semibold mt-16 mb-4">Ratings</h2>
-        <div className="bg-base-100 border rounded-xl p-4 w-full h-80">
-          <ResponsiveContainer width="100%" height={300}>
-            <ComposedChart layout="vertical" data={}>
-              <CartesianGrid stroke="#f5f5f5" />
-              <XAxis type="number" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Bar dataKey="ratings" barSize={20} fill="#413ea0" />
-            </ComposedChart>
-          </ResponsiveContainer>
-        </div>
-      </div> */}
+      <Recharts></Recharts>
 
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
       {/* Description */}

@@ -1,4 +1,5 @@
 // import React from 'react';
+import { toast } from "react-toastify";
 
 import { useState } from "react";
 import {
@@ -10,8 +11,12 @@ const Installation = () => {
   const [installation, setInstallation] = useState(() => loadInstallation());
   const [sortOrder, setSortOrder] = useState("none");
 
-    if (!installation.length) {
-    return <p className="text-center my-40 text-4xl text-gray-400 font-semibold">No data available</p>
+  if (!installation.length) {
+    return (
+      <p className="text-center my-40 text-4xl text-gray-400 font-semibold">
+        No data available
+      </p>
+    );
   }
 
   const sortedItem = (() => {
@@ -26,7 +31,20 @@ const Installation = () => {
 
   const handleRemove = (id) => {
     removeFromInstallation(id);
-    setInstallation(pre => pre.filter(p => p.id !== id));
+    setInstallation((pre) => pre.filter((p) => p.id !== id));
+  };
+
+  const handleUninstall = () => {
+    toast("🐴 This apps successfully uninstalled", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   return (
@@ -66,11 +84,7 @@ const Installation = () => {
           <div key={p.id} className="w-11/12 mx-auto py-2">
             <div className="flex items-center justify-between bg-white p-6 rounded-lg">
               <div className="flex gap-5 items-center">
-                <img
-                  src={p.image}
-                  alt=""
-                  className="w-36 h-36 rounded-2xl"
-                />
+                <img src={p.image} alt="" className="w-36 h-36 rounded-2xl" />
                 <div>
                   <h2 className="font-inter text-xl text-[#001931] pb-3 font-semibold">
                     {p.title}
@@ -105,8 +119,11 @@ const Installation = () => {
               </div>
               <div>
                 <button
+                  onClick={() => {
+                    handleRemove(p.id);
+                    handleUninstall();
+                  }}
                   className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-2 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
-                  onClick={() => handleRemove(p.id)}
                 >
                   Uninstall
                 </button>

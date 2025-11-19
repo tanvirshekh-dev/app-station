@@ -1,5 +1,3 @@
-import { toast } from "react-toastify";
-
 export const loadInstallation = () => {
   try {
     const data = localStorage.getItem("installation");
@@ -12,8 +10,6 @@ export const loadInstallation = () => {
 
 export const updateApps = (app) => {
   const installation = loadInstallation();
-  toast.success("Successfully Download This App");
-
   try {
     const isDuplicate = installation.some((p) => p.id === app.id);
     if (isDuplicate) return alert("Already added this apps");
