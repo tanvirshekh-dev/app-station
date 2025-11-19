@@ -3,15 +3,17 @@ import { useEffect, useState } from "react";
 import {
   Bar,
   BarChart,
+  CartesianGrid,
+  ComposedChart,
   Legend,
+  Line,
   ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
 
-
-const Recharts = () => {
+const Recharts = ({app}) => {
   const [apiCallData, setApiCallData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -34,27 +36,40 @@ const Recharts = () => {
   if (loading) return <p>Loading data...</p>;
   if (error) return <p>Error fetching data: {error.message}</p>;
 
-  const result = apiCallData.map(item => {
-  return {
-    ratings: item.ratings.map(r => ({
-      name: r.name,
-      count: r.count
-    }))
-  };
-});
-  console.log(apiCallData);
-  
+  // const ratingsOnly = apiCallData.flatMap((item) =>
+  //   item.ratings.map((r) => ({
+  //     name: r.name,
+  //     count: r.count,
+  //   }))
+  // );
+
+  console.log(app);
+
   return (
     <div className="w-11/12 mx-auto">
-      <ResponsiveContainer width="100%" height={450}>
-        <BarChart layout="vertical" data={result}>
-          <XAxis type="number" />
-          <YAxis />
+        <ComposedChart
+          layout="vertical"
+          style={{
+            width: "100%",
+            maxHeight: "70vh",
+            aspectRatio: 1 / 1.618,
+          }}
+          responsive
+          data={app}
+          margin={{
+            top: 20,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis type="number"/>
+          <YAxis dataKey="name" type="category" scale="band" width="auto" />
           <Tooltip />
           <Legend />
           <Bar dataKey="count" barSize={20} fill="#413ea0" />
-        </BarChart>
-      </ResponsiveContainer>
+        </ComposedChart>
     </div>
   );
 };

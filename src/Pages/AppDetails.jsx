@@ -1,9 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import useApps from "../Hooks/useApps";
-import { updateApps } from "../utils/localStorage";
+import { loadInstallation, updateApps } from "../utils/localStorage";
 import { toast, ToastContainer } from "react-toastify";
 // import Installation from "./Installation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Recharts from "../Componentes/Recharts";
 
 const AppDetails = () => {
@@ -11,6 +11,15 @@ const AppDetails = () => {
   const { apps, loading } = useApps();
   const app = apps.find((e) => String(e.id) === id);
   const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    const storeApp = loadInstallation();
+    console.log(storeApp);
+    const isFind = storeApp.find((a) => a.id == id);
+    if (isFind) {
+      setIsInstalled(true);
+    }
+  }, []);
 
   if (loading) return <p>Loading..⏳⏳</p>;
   if (!app)
@@ -111,7 +120,7 @@ const AppDetails = () => {
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
 
       {/* barcherts */}
-      <Recharts></Recharts>
+      <Recharts app={app.ratings}></Recharts>
 
       <hr className="py-7 text-gray-400 w-11/12 mx-auto" />
       {/* Description */}
