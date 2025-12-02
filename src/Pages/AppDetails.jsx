@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Recharts from "../Componentes/Recharts";
 import AppsNotFound from "../Componentes/AppsNotFound";
 import Loading from "../Layouts/Loading";
+import { formatNumber } from "../utils/numberFormet";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -23,11 +24,8 @@ const AppDetails = () => {
     }
   }, []);
 
-  if (loading) return <Loading></Loading>
-  if (!app)
-    return (
-      <AppsNotFound></AppsNotFound>
-    );
+  if (loading) return <Loading></Loading>;
+  if (!app) return <AppsNotFound></AppsNotFound>;
 
   const {
     image,
@@ -47,14 +45,18 @@ const AppDetails = () => {
   return (
     <div className="bg-[#f5f5f5]">
       {/* apps details */}
-      <div className="flex items-center w-11/12 mx-auto pt-20 pb-10">
+      <div className="flex flex-col md:flex-row items-center w-11/12 mx-auto pt-20 pb-10">
         <figure>
-          <img src={image} alt="app" className="w-72 h-72 mr-56" />
+          <img
+            src={image}
+            alt="app"
+            className="w-72 h-72 pb-10 md:pb-0 md:mr-56 "
+          />
         </figure>
         <div className="card-body w-full">
           <div className="">
-            <div>
-              <h2 className="font-inter font-bold text-3xl text-[#001931]">
+            <div className="text-center md:text-left">
+              <h2 className="font-inter font-bold text-4xl text-[#001931]">
                 {title}
               </h2>
               <p className="font-inter text-xl text-[#627382] pt-3">
@@ -66,8 +68,8 @@ const AppDetails = () => {
               <hr className="my-7 text-gray-400 w-full" />
             </div>
 
-            <div className="flex items-center gap-16">
-              <div className="">
+            <div className="flex flex-col md:flex-row items-center gap-16">
+              <div className="flex flex-col items-center justify-center md:items-start">
                 <img
                   src="/public/assets/icon-downloads.png"
                   alt=""
@@ -75,11 +77,11 @@ const AppDetails = () => {
                 />
                 <p className="font-inter text-[#001931] py-2">Downloads</p>
                 <h2 className="font-inter font-extrabold text-4xl text-[#001931]">
-                  {downloads}
+                  {formatNumber(downloads)}
                 </h2>
               </div>
 
-              <div className="">
+              <div className="flex flex-col items-center justify-center md:items-start">
                 <img
                   src="/public/assets/icon-ratings.png"
                   alt=""
@@ -93,7 +95,7 @@ const AppDetails = () => {
                 </h2>
               </div>
 
-              <div className="">
+              <div className="flex flex-col items-center justify-center md:items-start">
                 <img
                   src="/public/assets/icon-review.png"
                   alt=""
@@ -106,16 +108,18 @@ const AppDetails = () => {
               </div>
             </div>
 
-            <button
-              onClick={() => {
-                updateApps(app);
-                handleClick();
-              }}
-              disabled={isInstalled}
-              className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
-            >
-              {isInstalled ? "Installed" : <p>Install Now ({app.size})</p>}
-            </button>
+            <div className="flex items-center justify-center md:justify-start">
+              <button
+                onClick={() => {
+                  updateApps(app);
+                  handleClick();
+                }}
+                disabled={isInstalled}
+                className="btn hover:shadow-md font-inter font-semibold text-xl text-white py-3.5 px-5 bg-[#00D390] rounded-md mt-7 cursor-pointer"
+              >
+                {isInstalled ? "Installed" : <p>Install Now ({app.size})</p>}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -129,7 +133,7 @@ const AppDetails = () => {
       <div className="w-11/12 mx-auto">
         <div>
           <h2 className="font-inter font-semibold text-2xl">Description</h2>
-          <p className="text-[#627382] font-inter text-lg pt-6 pb-16">
+          <p className="text-[#627382] font-inter text-lg pt-6 pb-16 text-justify">
             {description}
           </p>
         </div>

@@ -47,18 +47,17 @@ const Installation = () => {
     });
   };
 
-
   function compactFormat(num) {
-    return new Intl.NumberFormat('en', { 
-        notation: 'compact',
-        maximumFractionDigits: 1 
+    return new Intl.NumberFormat("en", {
+      notation: "compact",
+      maximumFractionDigits: 1,
     }).format(num);
   }
 
   return (
     <div className="bg-[#f5f5f5]">
       <div>
-        <h2 className="font-inter text-4xl font-bold text-[#001931] text-center pt-20">
+        <h2 className="font-inter text-3xl md:text-4xl font-bold text-[#001931] text-center pt-20">
           Your Installed Apps
         </h2>
         <p className="text-center text-xl text-[#627382] mt-4 pb-10">
@@ -67,7 +66,7 @@ const Installation = () => {
       </div>
 
       <div className="flex justify-between items-center w-11/12 mx-auto pb-6">
-        <h1 className="text-3xl font-semibold">
+        <h1 className="text-xl md:text-3xl font-semibold">
           Installation{" "}
           <span className="text-lg text-gray-400">
             ({sortedItem.length}) Products Found{" "}
@@ -80,9 +79,24 @@ const Installation = () => {
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
-            <option className="text-[#627382] w-full py-2 px-4 rounded-md" value="none">Sort By Size</option>
-            <option className="text-[#627382] w-full py-2 px-4 rounded-md" value="price-asc">Low-&gt;Heigh</option>
-            <option className="text-[#627382] w-full py-2 px-4 rounded-md" value="price-desc">Heigh-&gt;Low</option>
+            <option
+              className="text-[#627382] w-full py-2 px-4 rounded-md"
+              value="none"
+            >
+              Sort By Size
+            </option>
+            <option
+              className="text-[#627382] w-full py-2 px-4 rounded-md"
+              value="price-asc"
+            >
+              Low-&gt;Heigh
+            </option>
+            <option
+              className="text-[#627382] w-full py-2 px-4 rounded-md"
+              value="price-desc"
+            >
+              Heigh-&gt;Low
+            </option>
           </select>
         </label>
       </div>
@@ -90,14 +104,14 @@ const Installation = () => {
       <div className="space-y-3 pb-20">
         {sortedItem.map((p) => (
           <div key={p.id} className="w-11/12 mx-auto py-2">
-            <div className="flex items-center justify-between bg-white p-6 rounded-lg">
-              <div className="flex gap-5 items-center">
+            <div className="flex flex-col md:flex-row items-center justify-between bg-white p-6 rounded-lg">
+              <div className="flex flex-col md:flex-row gap-5 items-center">
                 <img src={p.image} alt="" className="w-36 h-36 rounded-2xl" />
-                <div>
-                  <h2 className="font-inter text-xl text-[#001931] pb-3 font-semibold">
+                <div className="text-center md:text-left">
+                  <h2 className="font-inter text-2xl text-[#001931] pb-3 font-semibold">
                     {p.title}
                   </h2>
-                  <div className="flex items-center justify-between font-inter">
+                  <div className="flex items-center justify-between font-inter text-xl">
                     <a
                       href=""
                       className="flex items-center space-x-2 text-[#00D390] py-1.5 rounded-sm"

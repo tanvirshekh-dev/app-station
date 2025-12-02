@@ -9,7 +9,7 @@ const useApps = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     axios("/appsData.json")
       .then((data) => {
         if (search) {

@@ -33,9 +33,6 @@ const Recharts = ({app}) => {
   if (loading) return <p>Loading data...</p>;
   if (error) return <p>Error fetching data: {error.message}</p>;
 
-
-  console.log(app);
-
   return (
     <div className="w-11/12 mx-auto">
         <ComposedChart
