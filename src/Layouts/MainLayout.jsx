@@ -1,16 +1,32 @@
-import React from "react";
 import Navbar from "../Componentes/Navbar";
-import { Outlet } from "react-router";
 import Footer from "../Componentes/Footer";
+import { Outlet, useLocation } from "react-router";
 import { ToastContainer } from "react-toastify";
-
+import { useEffect, useState } from "react";
+import Loading from "./Loading";
 const MainLayout = () => {
+  const location = useLocation()
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 500);
+  }, [location.pathname]);
+
+
+
   return (
     <div className="flex flex-col min-h-screen ">
       <Navbar></Navbar>
-      <div className="flex-1">
-        <Outlet></Outlet>
-      </div>
+      {loading ? (
+        <Loading></Loading>
+      ) : (
+        <div className="flex-1">
+          <Outlet></Outlet>
+        </div>
+      )}
       <Footer></Footer>
 
       <ToastContainer

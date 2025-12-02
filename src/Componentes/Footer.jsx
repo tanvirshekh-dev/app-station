@@ -1,5 +1,4 @@
 import { Facebook, Linkedin, Target, Twitter } from "lucide-react";
-import React from "react";
 import { Link } from "react-router";
 
 const Footer = () => {

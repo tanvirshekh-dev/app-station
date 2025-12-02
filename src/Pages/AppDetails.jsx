@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 import Recharts from "../Componentes/Recharts";
 import AppsNotFound from "../Componentes/AppsNotFound";
+import Loading from "../Layouts/Loading";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -22,7 +23,7 @@ const AppDetails = () => {
     }
   }, []);
 
-  if (loading) return <p>Loading..⏳⏳</p>;
+  if (loading) return <Loading></Loading>
   if (!app)
     return (
       <AppsNotFound></AppsNotFound>

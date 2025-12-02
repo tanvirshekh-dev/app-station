@@ -20,9 +20,9 @@ const Installation = () => {
   }
 
   const sortedItem = (() => {
-    if (sortOrder === "price-asc") {
+    if (sortOrder == "price-asc") {
       return [...installation].sort((a, b) => a.downloads - b.downloads);
-    } else if (sortOrder === "price-desc") {
+    } else if (sortOrder == "price-desc") {
       return [...installation].sort((a, b) => b.downloads - a.downloads);
     } else {
       return installation;
@@ -47,6 +47,14 @@ const Installation = () => {
     });
   };
 
+
+  function compactFormat(num) {
+    return new Intl.NumberFormat('en', { 
+        notation: 'compact',
+        maximumFractionDigits: 1 
+    }).format(num);
+  }
+
   return (
     <div className="bg-[#f5f5f5]">
       <div>
@@ -68,13 +76,13 @@ const Installation = () => {
 
         <label className="form-control w-full max-w-xs ">
           <select
-            className="select select-bordered"
+            className="border border-[#627382] text-[#627382] w-full py-2 pr-4 pl-2 rounded-md"
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
-            <option value="none">Sort By Size</option>
-            <option value="price-asc">Low-&gt;Heigh</option>
-            <option value="price-desc">Heigh-&gt;Low</option>
+            <option className="text-[#627382] w-full py-2 px-4 rounded-md" value="none">Sort By Size</option>
+            <option className="text-[#627382] w-full py-2 px-4 rounded-md" value="price-asc">Low-&gt;Heigh</option>
+            <option className="text-[#627382] w-full py-2 px-4 rounded-md" value="price-desc">Heigh-&gt;Low</option>
           </select>
         </label>
       </div>
@@ -99,7 +107,7 @@ const Installation = () => {
                         alt=""
                         className="w-4 h-4"
                       />{" "}
-                      <span>{p.downloads}</span>
+                      <span>{compactFormat(p.downloads)}</span>
                     </a>
                     <a
                       href=""

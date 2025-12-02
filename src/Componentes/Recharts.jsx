@@ -2,12 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import {
   Bar,
-  BarChart,
   CartesianGrid,
   ComposedChart,
   Legend,
-  Line,
-  ResponsiveContainer,
   Tooltip,
   XAxis,
   YAxis,
@@ -36,12 +33,6 @@ const Recharts = ({app}) => {
   if (loading) return <p>Loading data...</p>;
   if (error) return <p>Error fetching data: {error.message}</p>;
 
-  // const ratingsOnly = apiCallData.flatMap((item) =>
-  //   item.ratings.map((r) => ({
-  //     name: r.name,
-  //     count: r.count,
-  //   }))
-  // );
 
   console.log(app);
 

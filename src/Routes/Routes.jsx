@@ -5,6 +5,7 @@ import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
 import Home from "../Pages/Home";
 import AppDetails from "../Pages/AppDetails";
+import Loading from "../Layouts/Loading";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: () => fetch('../appsData.jsx'),
-        element: <Home></Home>
+        element: <Home></Home>,
+        hydrateFallbackElement: <Loading></Loading>
       },
       {
         path: "/apps",

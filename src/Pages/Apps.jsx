@@ -1,22 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AppsCard from "../Componentes/AppsCard";
 import SkeletonLoader from "../Componentes/SkeletonLoader";
 import useApps from "../Hooks/useApps";
 import { useNavigate } from "react-router";
+import Loading from "../Layouts/Loading";
 
 const Apps = () => {
+  // const handleSearch = useState([])
+  const { apps, loading, setSearch, search } = useApps();
+  // const [search, setSearch] = useState("");
+ console.log(apps);
+//   if (loading) {
+//   return <Loading></Loading>
+// }
+ 
+  // const [searchedApps, setSearchedApps] = useState(apps)
+  // const [searchedLoading, setSearchedLoading] = useState(true)
 
-   const navigate = useNavigate();
-    const showAllApps = () => {
-      navigate('/apps');
-    }
-  const { apps, loading } = useApps();
 
-  const [search, setSearch] = useState("");
-  const term = search.trim().toLocaleLowerCase();
-  const searchedApps = term
-    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
-    : apps;
+  // useEffect(() => {
+  //    const term = search.trim().toLocaleLowerCase();
+  //   const searched = term
+  //     ? apps.filter((app) => app.title.toLocaleLowerCase().includes(term))
+  //     : apps;
+  //   console.log(searched);
+    
+  //   if (searched.length > 0) {
+  //     setSearchedApps(searched)
+  //   }
+  //   else {
+  //     setSearchedApps(apps);
+  //   }
+  // }, [search]);
+
+  const navigate = useNavigate();
+  const showAllApps = () => {
+    navigate("/apps");
+  };
+
+  if (!apps || loading) {
+    return <Loading></Loading>;
+  }
 
   return (
     <div className="bg-[#f5f5f5]">
@@ -30,7 +54,7 @@ const Apps = () => {
 
         <div className="flex items-center justify-between w-11/12 mx-auto">
           <span className="text-2xl text-[#001931] font-medium">
-            ({searchedApps.length}) Apps Found{" "}
+            ({apps.length}) Apps Found{" "}
           </span>
           <div className="search-input-container">
             <label className="input flex items-center">
@@ -44,25 +68,21 @@ const Apps = () => {
             </label>
           </div>
         </div>
-        {searchedApps.length === 0 ? (
+        {apps.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-5xl text-center font-semibold pt-20 pb-8 text-[#001931]">No Apps Found</p>
-            <button onClick={showAllApps} className="btn py-3 px-4 rounded-sm bg-linear-to-t from-[#9F62F2] to-[#632EE3] text-white cursor-pointer">
-              Show All Apps
-            </button>
+            <p className="text-5xl text-center font-semibold pt-20 pb-8 text-[#001931]">
+              No Apps Found
+            </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-11/12 mx-auto pt-4 pb-20">
-            {searchedApps.map((app) => (
-              <AppsCard key={app.id} app={app}></AppsCard>
-            ))}
-          </div>
+          ""
         )}
         {loading ? (
-          <SkeletonLoader count={24}></SkeletonLoader>
+          // <SkeletonLoader count={24}></SkeletonLoader>
+          <Loading></Loading>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-11/12 mx-auto pt-4 pb-20">
-            {searchedApps.map((app) => (
+            {apps.map((app) => (
               <AppsCard key={app.id} app={app}></AppsCard>
             ))}
           </div>

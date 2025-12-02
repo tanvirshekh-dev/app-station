@@ -12,3 +12,7 @@ a.active {
   text-decoration: underline;
   font-weight: 600;
 }
+
+:root{
+  background-color: #ffff;
+}
