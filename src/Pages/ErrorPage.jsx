@@ -10,7 +10,7 @@ const ErrorPage = () => {
         <div>
             <div className="p-20">
         <img
-          src="/public/assets/error-404.png"
+          src="/assets/error-404.png"
           alt="Apps Not Found"
           className="mx-auto mb-5 pt-10 pb-5"
         />

@@ -11,7 +11,7 @@ const AppsNotFound = () => {
     <div>
       <div className="p-20">
         <img
-          src="/public/assets/App-Error.png"
+          src="/assets/App-Error.png"
           alt="Apps Not Found"
           className="mx-auto mb-5 pt-10 pb-5"
         />
