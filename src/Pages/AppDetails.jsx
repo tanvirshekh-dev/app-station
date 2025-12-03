@@ -71,7 +71,7 @@ const AppDetails = () => {
             <div className="flex flex-col md:flex-row items-center gap-16">
               <div className="flex flex-col items-center justify-center md:items-start">
                 <img
-                  src="/public/assets/icon-downloads.png"
+                  src="/assets/icon-downloads.png"
                   alt=""
                   className="w-8 h-8"
                 />
@@ -83,7 +83,7 @@ const AppDetails = () => {
 
               <div className="flex flex-col items-center justify-center md:items-start">
                 <img
-                  src="/public/assets/icon-ratings.png"
+                  src="/assets/icon-ratings.png"
                   alt=""
                   className="w-8 h-8"
                 />
@@ -97,7 +97,7 @@ const AppDetails = () => {
 
               <div className="flex flex-col items-center justify-center md:items-start">
                 <img
-                  src="/public/assets/icon-review.png"
+                  src="/assets/icon-review.png"
                   alt=""
                   className="w-8 h-8"
                 />
